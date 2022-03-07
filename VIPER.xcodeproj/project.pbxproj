@@ -68,6 +68,7 @@
 		B208C12427D3183F00DBF54B /* VIPER */ = {
 			isa = PBXGroup;
 			children = (
+				B208C14D27D49BA800DBF54B /* movie-detail-module */,
 				B208C13927D318BA00DBF54B /* movie-module */,
 				B208C12527D3183F00DBF54B /* AppDelegate.swift */,
 				B208C12727D3183F00DBF54B /* SceneDelegate.swift */,
@@ -137,6 +138,61 @@
 			isa = PBXGroup;
 			children = (
 				B208C14427D3191100DBF54B /* MovieProtocols.swift */,
+			);
+			path = protocols;
+			sourceTree = "<group>";
+		};
+		B208C14D27D49BA800DBF54B /* movie-detail-module */ = {
+			isa = PBXGroup;
+			children = (
+				B208C15327D49C0B00DBF54B /* protocols */,
+				B208C15227D49C0000DBF54B /* router */,
+				B208C15127D49BFB00DBF54B /* entity */,
+				B208C15027D49BF400DBF54B /* presenter */,
+				B208C14F27D49BE700DBF54B /* interactor */,
+				B208C14E27D49BDF00DBF54B /* view */,
+			);
+			path = "movie-detail-module";
+			sourceTree = "<group>";
+		};
+		B208C14E27D49BDF00DBF54B /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		B208C14F27D49BE700DBF54B /* interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = interactor;
+			sourceTree = "<group>";
+		};
+		B208C15027D49BF400DBF54B /* presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = presenter;
+			sourceTree = "<group>";
+		};
+		B208C15127D49BFB00DBF54B /* entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = entity;
+			sourceTree = "<group>";
+		};
+		B208C15227D49C0000DBF54B /* router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = router;
+			sourceTree = "<group>";
+		};
+		B208C15327D49C0B00DBF54B /* protocols */ = {
+			isa = PBXGroup;
+			children = (
 			);
 			path = protocols;
 			sourceTree = "<group>";
