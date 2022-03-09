@@ -19,6 +19,8 @@
 		B208C14127D318F700DBF54B /* MoviePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B208C14027D318F700DBF54B /* MoviePresenter.swift */; };
 		B208C14327D3190300DBF54B /* MovieRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B208C14227D3190300DBF54B /* MovieRouter.swift */; };
 		B208C14527D3191200DBF54B /* MovieProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = B208C14427D3191100DBF54B /* MovieProtocols.swift */; };
+		B208C15627D93BA100DBF54B /* movieAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B208C15527D93BA100DBF54B /* movieAPI.swift */; };
+		B208C15827D93BEE00DBF54B /* MovieDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B208C15727D93BEE00DBF54B /* MovieDetailModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		B208C14027D318F700DBF54B /* MoviePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviePresenter.swift; sourceTree = "<group>"; };
 		B208C14227D3190300DBF54B /* MovieRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieRouter.swift; sourceTree = "<group>"; };
 		B208C14427D3191100DBF54B /* MovieProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieProtocols.swift; sourceTree = "<group>"; };
+		B208C15527D93BA100DBF54B /* movieAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = movieAPI.swift; sourceTree = "<group>"; };
+		B208C15727D93BEE00DBF54B /* MovieDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +72,7 @@
 		B208C12427D3183F00DBF54B /* VIPER */ = {
 			isa = PBXGroup;
 			children = (
+				B208C15427D93AA700DBF54B /* MovieService */,
 				B208C14D27D49BA800DBF54B /* movie-detail-module */,
 				B208C13927D318BA00DBF54B /* movie-module */,
 				B208C12527D3183F00DBF54B /* AppDelegate.swift */,
@@ -179,6 +184,7 @@
 		B208C15127D49BFB00DBF54B /* entity */ = {
 			isa = PBXGroup;
 			children = (
+				B208C15727D93BEE00DBF54B /* MovieDetailModel.swift */,
 			);
 			path = entity;
 			sourceTree = "<group>";
@@ -195,6 +201,14 @@
 			children = (
 			);
 			path = protocols;
+			sourceTree = "<group>";
+		};
+		B208C15427D93AA700DBF54B /* MovieService */ = {
+			isa = PBXGroup;
+			children = (
+				B208C15527D93BA100DBF54B /* movieAPI.swift */,
+			);
+			path = MovieService;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -277,6 +291,8 @@
 				B208C14527D3191200DBF54B /* MovieProtocols.swift in Sources */,
 				B208C13F27D318E900DBF54B /* MovieInteractor.swift in Sources */,
 				B208C12827D3183F00DBF54B /* SceneDelegate.swift in Sources */,
+				B208C15827D93BEE00DBF54B /* MovieDetailModel.swift in Sources */,
+				B208C15627D93BA100DBF54B /* movieAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

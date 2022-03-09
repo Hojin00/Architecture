@@ -6,22 +6,27 @@
 //
 
 import Foundation
+import UIKit
 
+class MovieViewController: UIViewController {
+    
+    var presenter: ViewToPresenterProtocol?
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+}
 
-// view to presenter
-    // instantiate router, presenter, interactor
-    // asks fetching movie
-
-// presenter to view
-    // returns movie fetched
-
-// presenter to router
-    // create new module
-
-// presenter to interactor
-    // start fetching movie
-
-// interactor to presenter
-    // returns a data
+extension MovieViewController: PresenterToViewProtocol {
+    
+    func updateMovieWithSuccess() {
+        <#code#>
+    }
+    
+    func updateMovieError() {
+        <#code#>
+    }
+    
+}
 
 

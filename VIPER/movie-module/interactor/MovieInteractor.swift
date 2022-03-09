@@ -6,3 +6,13 @@
 //
 
 import Foundation
+
+struct MovieInteractor: PresenterToInteractorProtocol {
+    var presenter: InteractorToPresenterProtocol?
+    
+    func fetchMovie() {
+        <#code#>
+    }
+    
+    
+}
