@@ -18,13 +18,12 @@ class MovieViewController: UIViewController {
 }
 
 extension MovieViewController: PresenterToViewProtocol {
-    
-    func updateMovieWithSuccess() {
-        <#code#>
+    func updateMovieWithSuccess(movieArray: Array<MovieModel>) {
+        print(movieArray)
     }
     
     func updateMovieError() {
-        <#code#>
+        print("error")
     }
     
 }

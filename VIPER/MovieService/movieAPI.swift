@@ -17,14 +17,14 @@ class LocalMoviesLists {
    }
 }
 
-struct MovieService {
+struct MovieAPI {
     
-    private let apiKey = "bf35d76c9fdeedd3180a8323a950dade"
+    private let apiKey = "2f8e29176bab443251fb4a3303db7498"
     
     
     func nowPlayingRequest(page: Int = 1, completionHandler: @escaping ([MovieModel]) -> Void) {
         if page < 0 {fatalError("Page should not be lower than 1")}
-        guard let url = URL(string: ("https://api.themoviedb.org/3/movie/now_playing?api_key=bf35d76c9fdeedd3180a8323a950dade&language=en-US&page=") + "\(page)") else {
+        guard let url = URL(string: ("https://api.themoviedb.org/3/movie/now_playing?api_key=\(apiKey)&language=en-US&page=") + "\(page)") else {
             fatalError("URL not found")
         }
         
@@ -60,7 +60,7 @@ struct MovieService {
     
     func popularRequest(page: Int = 1, completionHandler: @escaping ([MovieModel]) -> Void) {
         if page < 0 {fatalError("Page should not be lower than 1")}
-        guard let url = URL(string: ("https://api.themoviedb.org/3/movie/popular?api_key=bf35d76c9fdeedd3180a8323a950dade&language=en-US&page=") + "\(page)") else {
+        guard let url = URL(string: ("https://api.themoviedb.org/3/movie/popular?api_key=\(apiKey)&language=en-US&page=") + "\(page)") else {
             fatalError("URL not found")
         }
         

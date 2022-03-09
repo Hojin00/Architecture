@@ -7,11 +7,14 @@
 
 import Foundation
 
-struct MovieInteractor: PresenterToInteractorProtocol {
+class MovieInteractor: PresenterToInteractorProtocol {
     var presenter: InteractorToPresenterProtocol?
+    let movieService = MovieAPI()
     
     func fetchMovie() {
-        <#code#>
+        movieService.nowPlayingRequest { movies in
+            self.presenter?.fetchMovieWithSuccess(movieArray: movies)
+        }
     }
     
     
