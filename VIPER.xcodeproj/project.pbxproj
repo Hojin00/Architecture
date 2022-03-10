@@ -26,6 +26,7 @@
 		B208C16227DA680700DBF54B /* MovieDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B208C16127DA680700DBF54B /* MovieDetailViewController.swift */; };
 		FDFBCE0327DA6A0200619AE8 /* MoviesStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDFBCE0227DA6A0200619AE8 /* MoviesStoryboard.storyboard */; };
 		FDFBCE0527DA76D800619AE8 /* MoviesNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFBCE0427DA76D800619AE8 /* MoviesNavigationController.swift */; };
+		FDFBCE0727DA781F00619AE8 /* MoviesListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFBCE0627DA781F00619AE8 /* MoviesListTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		B208C16127DA680700DBF54B /* MovieDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailViewController.swift; sourceTree = "<group>"; };
 		FDFBCE0227DA6A0200619AE8 /* MoviesStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MoviesStoryboard.storyboard; sourceTree = "<group>"; };
 		FDFBCE0427DA76D800619AE8 /* MoviesNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesNavigationController.swift; sourceTree = "<group>"; };
+		FDFBCE0627DA781F00619AE8 /* MoviesListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesListTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 				B208C13C27D318DD00DBF54B /* MovieViewController.swift */,
 				FDFBCE0227DA6A0200619AE8 /* MoviesStoryboard.storyboard */,
 				FDFBCE0427DA76D800619AE8 /* MoviesNavigationController.swift */,
+				FDFBCE0627DA781F00619AE8 /* MoviesListTableViewCell.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -310,6 +313,7 @@
 				B208C14527D3191200DBF54B /* MovieProtocols.swift in Sources */,
 				B208C13F27D318E900DBF54B /* MovieInteractor.swift in Sources */,
 				B208C16227DA680700DBF54B /* MovieDetailViewController.swift in Sources */,
+				FDFBCE0727DA781F00619AE8 /* MoviesListTableViewCell.swift in Sources */,
 				B208C12827D3183F00DBF54B /* SceneDelegate.swift in Sources */,
 				B208C15827D93BEE00DBF54B /* MovieDetailModel.swift in Sources */,
 				B208C15627D93BA100DBF54B /* movieAPI.swift in Sources */,
