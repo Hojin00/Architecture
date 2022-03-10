@@ -15,7 +15,8 @@ class MovieViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.title = "Movies"
+
         presenter?.askFetchingMovie()
     }
 }

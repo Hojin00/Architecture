@@ -45,7 +45,7 @@ protocol PresenterToInteractorProtocol {
     // a function to create a module
 
 protocol PresenterToRouterProtocol {
-    func createNewModule() -> MovieViewController
+    static func createNewModule() -> UINavigationController
     func pushToDetailScreen(navigationController: UINavigationController)
 }
 
