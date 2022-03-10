@@ -18,6 +18,7 @@ protocol ViewToPresenterProtocol {
     var interactor: PresenterToInteractorProtocol? { get set }
     
     func askFetchingMovie()
+    func getNumberOfRowsForNowPlaying()->Int
 }
 
 

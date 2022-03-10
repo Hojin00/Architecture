@@ -13,12 +13,12 @@ class MoviePresenter: ViewToPresenterProtocol {
     var view: PresenterToViewProtocol?
     
     var interactor: PresenterToInteractorProtocol?
-    
+
+
     func askFetchingMovie() {
         interactor?.fetchMovie()
     }
-    
-    
+
 }
 
 extension MoviePresenter: InteractorToPresenterProtocol {
