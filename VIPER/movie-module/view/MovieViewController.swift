@@ -69,8 +69,31 @@ extension MovieViewController: UITableViewDataSource, UITableViewDelegate {
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
+        var thisModel:MovieModel
+
+        if indexPath.section == 0 {
+            thisModel = popularMovieLists[indexPath.row]
+        }
+        else if indexPath.section == 1 {
+            thisModel = nowPlayingMovieLists[indexPath.row]
+        }
+        else {
+            return UITableViewCell()
+        }
+
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "MoviesListTableViewCell") as? MoviesListTableViewCell else {
+            return UITableViewCell()
+        }
+
+        //cell.movieImage = thisModel.
+
+        cell.movieTitleLabel.text = thisModel.title
+        cell.movieDescriptionLabel.text = thisModel.overview
+        cell.movieDescriptionLabel.text = thisModel.voteAverage
 
 
+
+        return cell
     }
 
 }
