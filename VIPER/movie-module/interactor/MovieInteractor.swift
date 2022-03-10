@@ -11,9 +11,15 @@ class MovieInteractor: PresenterToInteractorProtocol {
     var presenter: InteractorToPresenterProtocol?
     let movieService = MovieAPI()
     
-    func fetchMovie() {
+    func fetchNowPlayingMovie() {
         movieService.nowPlayingRequest { movies in
-            self.presenter?.fetchMovieWithSuccess(movieArray: movies)
+            self.presenter?.fetchNowPlayingMovieWithSuccess(movieArray: movies)
+        }
+    }
+    
+    func fetchPopularMovie() {
+        movieService.popularRequest { movies in
+            self.presenter?.fetchPopularMovieWithSuccess(movieArray: movies)
         }
     }
     

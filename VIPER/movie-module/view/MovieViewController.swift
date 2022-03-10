@@ -12,7 +12,8 @@ class MovieViewController: UIViewController {
     
     var presenter: ViewToPresenterProtocol?
 
-    var movieLists: Array<MovieModel> = Array()
+    var nowPlayingMovieLists: Array<MovieModel> = Array()
+    var popularMovieLists: Array<MovieModel> = Array()
 
     @IBOutlet weak var movieListTableView: UITableView!
 
@@ -27,13 +28,26 @@ class MovieViewController: UIViewController {
 }
 
 extension MovieViewController: PresenterToViewProtocol {
-    func updateMovieWithSuccess(movieArray: Array<MovieModel>) {
-        self.movieLists = movieArray
+    
+    
+    func updateNowPlayingMovieWithSuccess(movieArray: Array<MovieModel>) {
+        self.nowPlayingMovieLists = movieArray
         print(movieArray)
         // update a view
     }
     
-    func updateMovieError() {
+    func updateNowPlayingMovieError() {
+        print("error")
+        // print error in asking fetch
+    }
+    
+    func updatePopularMovieWithSuccess(movieArray: Array<MovieModel>) {
+        self.popularMovieLists = movieArray
+        print(movieArray)
+        // update a view
+    }
+    
+    func updatePopularMovieError() {
         print("error")
         // print error in asking fetch
     }
@@ -43,10 +57,13 @@ extension MovieViewController: UITableViewDataSource, UITableViewDelegate {
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if section == 0  {
-            return 2
+            return popularMovieLists.count
+        }
+        else if section == 1 {
+            return nowPlayingMovieLists.count
         }
         else {
-            return presenter?.getNumberOfRowsForNowPlaying() ?? 0
+            return 0
         }
     }
 

@@ -18,7 +18,7 @@ protocol ViewToPresenterProtocol {
     var interactor: PresenterToInteractorProtocol? { get set }
     
     func askFetchingMovie()
-    func getNumberOfRowsForNowPlaying()->Int
+    
 }
 
 
@@ -28,8 +28,11 @@ protocol ViewToPresenterProtocol {
             // 1. func success 2. func failure
 
 protocol PresenterToViewProtocol {
-    func updateMovieWithSuccess(movieArray: Array<MovieModel>)//completion handler
-    func updateMovieError()
+    func updateNowPlayingMovieWithSuccess(movieArray: Array<MovieModel>)//completion handler
+    func updateNowPlayingMovieError()
+    
+    func updatePopularMovieWithSuccess(movieArray: Array<MovieModel>)//completion handler
+    func updatePopularMovieError()
 }
 
 
@@ -38,7 +41,8 @@ protocol PresenterToViewProtocol {
 
 protocol PresenterToInteractorProtocol {
     var presenter: InteractorToPresenterProtocol? { get set }
-    func fetchMovie()
+    func fetchNowPlayingMovie()
+    func fetchPopularMovie()
 }
 
 
@@ -56,8 +60,11 @@ protocol PresenterToRouterProtocol {
     // 1. func success 2. func failure
 
 protocol InteractorToPresenterProtocol {
-    func fetchMovieWithSuccess(movieArray: Array<MovieModel>)//completion handler
-    func fetchMovieError()
+    func fetchNowPlayingMovieWithSuccess(movieArray: Array<MovieModel>)//completion handler
+    func fetchNowPlayingMovieError()
+    
+    func fetchPopularMovieWithSuccess(movieArray: Array<MovieModel>)//completion handler
+    func fetchPopularMovieError()
 }
 
 

@@ -8,6 +8,7 @@
 import Foundation
 
 class MoviePresenter: ViewToPresenterProtocol {
+    
     var router: PresenterToRouterProtocol?
     
     var view: PresenterToViewProtocol?
@@ -16,18 +17,27 @@ class MoviePresenter: ViewToPresenterProtocol {
 
 
     func askFetchingMovie() {
-        interactor?.fetchMovie()
+        interactor?.fetchNowPlayingMovie()
+        interactor?.fetchPopularMovie()
     }
 
 }
 
 extension MoviePresenter: InteractorToPresenterProtocol {
-    func fetchMovieWithSuccess(movieArray: Array<MovieModel>) {
-        view?.updateMovieWithSuccess(movieArray: movieArray)
+    func fetchPopularMovieWithSuccess(movieArray: Array<MovieModel>) {
+        view?.updatePopularMovieWithSuccess(movieArray: movieArray)
     }
     
-    func fetchMovieError() {
-        view?.updateMovieError()
+    func fetchPopularMovieError() {
+        view?.updatePopularMovieError()
+    }
+    
+    func fetchNowPlayingMovieWithSuccess(movieArray: Array<MovieModel>) {
+        view?.updateNowPlayingMovieWithSuccess(movieArray: movieArray)
+    }
+    
+    func fetchNowPlayingMovieError() {
+        view?.updateNowPlayingMovieError()
     }
     
 }
