@@ -21,6 +21,11 @@
 		B208C14527D3191200DBF54B /* MovieProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = B208C14427D3191100DBF54B /* MovieProtocols.swift */; };
 		B208C15627D93BA100DBF54B /* movieAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B208C15527D93BA100DBF54B /* movieAPI.swift */; };
 		B208C15827D93BEE00DBF54B /* MovieDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B208C15727D93BEE00DBF54B /* MovieDetailModel.swift */; };
+		B208C15A27DA67B800DBF54B /* MovieDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B208C15927DA67B800DBF54B /* MovieDetailRouter.swift */; };
+		B208C15C27DA67DF00DBF54B /* MovieDetailProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = B208C15B27DA67DF00DBF54B /* MovieDetailProtocols.swift */; };
+		B208C15E27DA67E900DBF54B /* MovieDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B208C15D27DA67E900DBF54B /* MovieDetailPresenter.swift */; };
+		B208C16027DA67F800DBF54B /* MovieDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B208C15F27DA67F800DBF54B /* MovieDetailInteractor.swift */; };
+		B208C16227DA680700DBF54B /* MovieDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B208C16127DA680700DBF54B /* MovieDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +45,11 @@
 		B208C14427D3191100DBF54B /* MovieProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieProtocols.swift; sourceTree = "<group>"; };
 		B208C15527D93BA100DBF54B /* movieAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = movieAPI.swift; sourceTree = "<group>"; };
 		B208C15727D93BEE00DBF54B /* MovieDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailModel.swift; sourceTree = "<group>"; };
+		B208C15927DA67B800DBF54B /* MovieDetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailRouter.swift; sourceTree = "<group>"; };
+		B208C15B27DA67DF00DBF54B /* MovieDetailProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailProtocols.swift; sourceTree = "<group>"; };
+		B208C15D27DA67E900DBF54B /* MovieDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailPresenter.swift; sourceTree = "<group>"; };
+		B208C15F27DA67F800DBF54B /* MovieDetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailInteractor.swift; sourceTree = "<group>"; };
+		B208C16127DA680700DBF54B /* MovieDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +173,7 @@
 		B208C14E27D49BDF00DBF54B /* view */ = {
 			isa = PBXGroup;
 			children = (
+				B208C16127DA680700DBF54B /* MovieDetailViewController.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -170,6 +181,7 @@
 		B208C14F27D49BE700DBF54B /* interactor */ = {
 			isa = PBXGroup;
 			children = (
+				B208C15F27DA67F800DBF54B /* MovieDetailInteractor.swift */,
 			);
 			path = interactor;
 			sourceTree = "<group>";
@@ -177,6 +189,7 @@
 		B208C15027D49BF400DBF54B /* presenter */ = {
 			isa = PBXGroup;
 			children = (
+				B208C15D27DA67E900DBF54B /* MovieDetailPresenter.swift */,
 			);
 			path = presenter;
 			sourceTree = "<group>";
@@ -192,6 +205,7 @@
 		B208C15227D49C0000DBF54B /* router */ = {
 			isa = PBXGroup;
 			children = (
+				B208C15927DA67B800DBF54B /* MovieDetailRouter.swift */,
 			);
 			path = router;
 			sourceTree = "<group>";
@@ -199,6 +213,7 @@
 		B208C15327D49C0B00DBF54B /* protocols */ = {
 			isa = PBXGroup;
 			children = (
+				B208C15B27DA67DF00DBF54B /* MovieDetailProtocols.swift */,
 			);
 			path = protocols;
 			sourceTree = "<group>";
@@ -284,12 +299,17 @@
 			files = (
 				B208C14327D3190300DBF54B /* MovieRouter.swift in Sources */,
 				B208C14127D318F700DBF54B /* MoviePresenter.swift in Sources */,
+				B208C15E27DA67E900DBF54B /* MovieDetailPresenter.swift in Sources */,
 				B208C13B27D318CC00DBF54B /* MovieModel.swift in Sources */,
+				B208C15C27DA67DF00DBF54B /* MovieDetailProtocols.swift in Sources */,
+				B208C16027DA67F800DBF54B /* MovieDetailInteractor.swift in Sources */,
 				B208C12A27D3183F00DBF54B /* ViewController.swift in Sources */,
 				B208C12627D3183F00DBF54B /* AppDelegate.swift in Sources */,
 				B208C13D27D318DD00DBF54B /* MovieViewController.swift in Sources */,
+				B208C15A27DA67B800DBF54B /* MovieDetailRouter.swift in Sources */,
 				B208C14527D3191200DBF54B /* MovieProtocols.swift in Sources */,
 				B208C13F27D318E900DBF54B /* MovieInteractor.swift in Sources */,
+				B208C16227DA680700DBF54B /* MovieDetailViewController.swift in Sources */,
 				B208C12827D3183F00DBF54B /* SceneDelegate.swift in Sources */,
 				B208C15827D93BEE00DBF54B /* MovieDetailModel.swift in Sources */,
 				B208C15627D93BA100DBF54B /* movieAPI.swift in Sources */,

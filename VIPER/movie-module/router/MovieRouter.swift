@@ -6,3 +6,10 @@
 //
 
 import Foundation
+import UIKit
+
+class MovieRouter: PresenterToRouterProtocol {
+    static func createModule() -> MovieViewController {
+        
+    }
+}
